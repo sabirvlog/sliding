@@ -1,0 +1,48 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body {
+	height: 100vh;
+	width: 100%;
+	display: grid;
+	place-items: center;
+	background-image: url(bg4.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+.Hero-Slider {
+	width: 60%;
+	height: 500px;
+	/*background: url(1.jpg);*/
+	background-size: cover;
+	background-position: center;
+	border-radius: 20px;
+	box-shadow: rgba(147, 157, 167, .2) 0px 20px 3px;
+	animation: ImageSlide 20s linear infinite;
+}
+@keyframes ImageSlide
+{
+	0% {
+		background-image: url(1.jpg);
+	}
+	25% {
+		background-image: url(2.jpg);
+	}
+	50% {
+		background-image: url(3.jpg);
+	}
+	75% {
+		background-image: url(4.jpg);
+	}
+	100% {
+		background-image: url(5.jpg);
+	}
+
+}
+
+.Hero-Slider:hover {
+	animation-play-state: paused;
+}
